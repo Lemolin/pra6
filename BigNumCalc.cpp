@@ -1,7 +1,7 @@
 #include "BigNumCalc.h"
 using namespace std;
 
-list<int> bigNumCalc::buildBigNum(string numString) {
+list<int> BigNumCalc::buildBigNum(string numString) {
     list<int> list;
     for (int i = 0;i<numString.size();i++) {
         list.push_back(stoi(string(1,numString[i])));
@@ -9,7 +9,7 @@ list<int> bigNumCalc::buildBigNum(string numString) {
     return list;
 }
 
-list<int> bigNumCalc::add(list<int> num1, list<int> num2) {
+list<int> BigNumCalc::add(list<int> num1, list<int> num2) {
     list<int> result;
     int num = 0;
 
@@ -37,7 +37,7 @@ list<int> bigNumCalc::add(list<int> num1, list<int> num2) {
     return result;
 }
 
-list<int> bigNumCalc::sub(list<int> num1, list<int> num2) {
+list<int> BigNumCalc::sub(list<int> num1, list<int> num2) {
     list<int> result;
     int num = 0;
 
@@ -69,7 +69,7 @@ list<int> bigNumCalc::sub(list<int> num1, list<int> num2) {
     return result;
 }
 
-list<int>bigNumCalc::mul(list<int> num1, list<int> num2) {
+list<int>BigNumCalc::mul(list<int> num1, list<int> num2) {
     list<int> result;
     int num = 0;
     int d2 = num2.front();
