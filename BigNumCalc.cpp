@@ -3,8 +3,8 @@ using namespace std;
 
 list<int> BigNumCalc::buildBigNum(string numString) {
     list<int> list;
-    for (int i = 0;i<numString.size();i++) {
-        list.push_back(stoi(string(1,numString[i])));
+    for (char c : numString) {
+        list.push_back(c - '0');
     }
     return list;
 }
